@@ -7,8 +7,28 @@
 
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App"/>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SQLite" Version="2.2.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="MvcMovie.db" />
+    <None Remove="MvcMovie.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20190914002156_AddedRating.cs" />
+    <Compile Remove="Migrations\20190914002156_AddedRating.Designer.cs" />
+    <Compile Remove="Migrations\20190913231149_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190913231149_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\RazorPagesMovieContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20190914015643_AddedRating.cs" />
+    <Compile Remove="Migrations\20190914015643_AddedRating.Designer.cs" />
+  </ItemGroup>
 </Project>
